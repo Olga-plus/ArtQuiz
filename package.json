@@ -1,0 +1,39 @@
+{
+  "name": "artquiz",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000A\u0000r\u0000t\u0000Q\u0000u\u0000i\u0000z\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&&webpack",
+    "dev": "set NODE_ENV=development&&webpack",
+    "build": "set NODE_ENV=production&&webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olga-plus/ArtQuiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olga-plus/ArtQuiz/issues"
+  },
+  "homepage": "https://github.com/Olga-plus/ArtQuiz#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^6.0.1",
+    "postcss-loader": "^6.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}

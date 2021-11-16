@@ -1,5 +1,6 @@
 import example from './img/118.jpg'
-import './styles/main.scss'
+import './styles/main.scss';
+import './views/page';
 
 console.log("Как интересно!")
 

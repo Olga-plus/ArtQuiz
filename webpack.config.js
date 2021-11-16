@@ -21,14 +21,14 @@ module.exports = {
     },
 
     
-    devServer: {
-        historyApiFallback: true,
-        contentBase: path.resolve(__dirname, './dist'),
-        open: true,
-        compress: true,
-        hot: true,
-        port: 8080,
-    },
+    // devServer: {
+    //     historyApiFallback: true,
+    //     contentBase: path.resolve(__dirname, './dist'),
+    //     open: true,
+    //     compress: true,
+    //     hot: true,
+    //     port: 8080,
+    // },
 
     plugins: [
         new HtmlWebpackPlugin({
@@ -37,7 +37,7 @@ module.exports = {
             filename: 'index.html', // название выходного файла
         }),
         new CleanWebpackPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
+        // new webpack.HotModuleReplacementPlugin(),
     ],
 
     module: {

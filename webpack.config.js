@@ -37,7 +37,6 @@ module.exports = {
             filename: 'index.html', // название выходного файла
         }),
         new CleanWebpackPlugin(),
-        // new webpack.HotModuleReplacementPlugin(),
     ],
 
     module: {

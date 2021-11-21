@@ -13,17 +13,39 @@ main{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 1vh 2vw 4vh 2vw;
+	margin: 4vh 2vw 4vh 2vw;
+}
+.container-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 2vw 4vh 2vw;
+}
+.home-container{
+	display: flex;
+}
+.icon-home{
+	height: 3vh;
+	width: 4vw;
+	margin: 0 5px 0 0;
 }
 h1 {
 	color: #e6c300;
 	text-decoration: none;
+	margin-top: 0;
 	a {
 		color: #e6c300;
 		text-decoration: none;
 	}
 }
+header{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
 .button-menu {
+	min-width: 30vw;
 	width: 45vw;
 	height: 6vh;
 	margin: 1vh 0 1vh 0;
@@ -33,6 +55,7 @@ h1 {
 	border-color: #f1c40f;
 	color: #363636;
 	font-weight: 600;
+	text-transform: uppercase;
 	background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
 	background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
 	background-position: 100%;
@@ -44,7 +67,7 @@ h1 {
 		color: #363636;
 	  }
 }
-.button-menu:hover, .btn:focus {
+.button-menu:hover, .button-menu:focus {
 	color: #fff;
 	outline: 0;
 }
@@ -52,20 +75,79 @@ h1 {
 	background-position: 0;
 	box-shadow: 0 0 5px rgba(230, 195, 0, 0.5);
 }
-img {
-	width: 90vw;
-	max-width: 256px;
+
+.img-start {
+	width: 45vw;
+	max-width: 45vw;
 	border-radius: 2vh;
-	margin-top: 1vh;
+	margin-top: 2vh;
 }
 
 footer {
-	width: 65vw;
+	min-width: 30vw;
+	width: 45vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font: 0.53rem sans-serif; 
 }
 .link {
-	width: 7.5vw;
-	height: 7.5vw;
+	width: 5.5vw;
+	height: 5.5vw;
+	border-radius: 2vh;
 }
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card{
+	// background-color: #e6c300;
+	border-radius: 15px 0 15px 0;
+	margin: 2vh;
+}
+
+.name{
+	display: flex;
+	height: 20%;
+	background-color: #fff;
+	border-radius: 15px 0 0 0;
+	align-items: center;
+	justify-content: center;
+	color: #363636;
+	font: 0.6rem sans-serif;
+	font-weight: 800;
+}
+
+.img-name{
+	filter: greyscale(100%);
+}
+.img-name:hover{
+	ilter: greyscale(0%);
+}
+
+.img-card {
+	margin: 0;
+	height: 80%;
+	width: 20vh;
+	border-radius: 0 0 15px 0;
+}
+
+// @media (max-width: 1920px) {
+// 	footer {
+// 		max-width: 49vw;
+// 		width: 49vw;
+// 		.link {
+// 			width: 2.5vw;
+// 			height: 2.5vw;
+// 			border-radius: 2vh;
+// 		}
+// 	}
+
+	// .card-container {
+	// 	max-width: 60vw;
+	// 	width: 60vw;	
+	// }
+
+// }

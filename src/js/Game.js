@@ -86,7 +86,7 @@ function showScores() {
     quizElement.innerHTML = quizEndHTML;
 };
 
-// create questions here
+// create questions here//
 let questions = [
     new Question(
         "Hyper Text Markup Language Stands For?", ["JQuery", "XHTML", "CSS", "HTML"], "HTML"

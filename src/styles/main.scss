@@ -136,6 +136,13 @@ footer {
 	border-radius: 0 0 15px 0;
 }
 
+#four-img{
+	display: grid;
+	height: 40vh;
+	grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+	gap: 20px 5px;
+
+}
 // @media (max-width: 1920px) {
 // 	footer {
 // 		max-width: 49vw;

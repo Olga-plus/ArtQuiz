@@ -33,7 +33,8 @@ const header = document.querySelector('header');
     header.appendChild(question);
 
     removeEl('.container-main');
-    const container = document.querySelector('.container-main')
+    const container = document.querySelector('.container-main');
+    container.id = 'four-img';
     const sectionAswer = document.createElement('div');
         for (let i = 0; i < 4; i++){
         const imgSection = document.createElement('div');
@@ -76,6 +77,8 @@ export async function gameQuestionsArrName(a) {
  
      removeEl('.container-main');
      const container = document.querySelector('.container-main')
+     container.id = 'four-author';
+     
      const sectionAswer = document.createElement('div');
 
         const imgSection = document.createElement('div');

@@ -2,22 +2,23 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 // const webpack = require('webpack');
-
 let mode = 'development'
 if (process.env.NODE_ENV === 'production') {
     mode = 'production'
 }
 console.log(mode + ' mode')
 
+
 module.exports = {
     mode: mode,
     entry: {
         main: path.resolve(__dirname, './src/index.js'),
+        // js:  path.resolve(__dirname, `./src/img/img-game/${/\.jpg$/}`)
     },
 
     output: {
-        path: path.resolve(__dirname, './dist'),
         filename: '[name].bundle.js',
+        path: path.resolve(__dirname, './dist'),
     },
 
     

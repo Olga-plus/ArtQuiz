@@ -1,7 +1,7 @@
 import image from '../img/img-game/118.jpg';
 import createImage from '../js/createImg';
 import menu from '../data/menu';
-import {gamePaints, gameArtists} from '../js/renderPages';
+import {gamePaints, gameArtists, } from '../js/renderPages';
 
 
 export async function render() {

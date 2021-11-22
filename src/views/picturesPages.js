@@ -1,4 +1,4 @@
-import {linkJPG, questions, jpgs} from '../data/sortData'
+import {linkJPG, questions} from '../data/sortData'
 import categories from '../data/catiegoriesName';
 import createImage from '../js/createImg';
 import iconHome from '../img/icon-home.svg';

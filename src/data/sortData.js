@@ -57,7 +57,7 @@ const jpgs = reqSvgs
 
  export let linkJPG = Object.values(jpgs);
 
- console.log(linkJPG);
+//  console.log(linkJPG);
 
 
  export default {questions, linkJPG, jpgs};

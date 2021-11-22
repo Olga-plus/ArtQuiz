@@ -17,11 +17,11 @@ export async function renderCategoriesArtists() {
 
     const headerContainer = document.createElement('div');
     headerContainer.classList.add('home-container');
-    parenth1.insertBefore(headerContainer,h1)
+    parenth1.insertBefore(headerContainer,h1);
 
     const divContain = document.createElement('div');
     divContain.classList.add('card-container');
-    container.appendChild(divContain)
+    container.appendChild(divContain);
 
     const homeIcon = await createImage(iconHome);
     homeIcon.classList.add('icon-home');
@@ -30,8 +30,11 @@ export async function renderCategoriesArtists() {
     await Promise.all(categories.map(async (element, index) => {
         const sectionCard = document.createElement('div');
         const sectionDiv = document.createElement('div');
-        sectionCard.classList.add('card')
-        sectionDiv.classList.add('name')
+
+        sectionCard.classList.add('card');
+        sectionCard.classList.add('author');
+        sectionCard.id = `${index}`;
+        sectionDiv.classList.add('name');
         sectionDiv.innerHTML = element; 
 
         divContain.appendChild(sectionCard);

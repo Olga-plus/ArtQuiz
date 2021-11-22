@@ -20,7 +20,7 @@ export async function renderCategoriesPictures() {
 
     const divContain = document.createElement('div');
     divContain.classList.add('card-container');
-    container.appendChild(divContain)
+    container.appendChild(divContain);
 
     const homeIcon = await createImage(iconHome);
     homeIcon.classList.add('icon-home');
@@ -29,12 +29,15 @@ export async function renderCategoriesPictures() {
     await Promise.all(categories.map(async (element, index) => {
         const sectionCard = document.createElement('div');
         const sectionDiv = document.createElement('div');
-        sectionCard.classList.add('card')
-        sectionDiv.classList.add('name')
+
+        sectionCard.classList.add('card');
+        sectionCard.classList.add('pictures');
+        sectionCard.id = `${index}`;
+        sectionDiv.classList.add('name');
         sectionDiv.innerHTML = element; 
 
         divContain.appendChild(sectionCard);
-        sectionCard.appendChild(sectionDiv)
+        sectionCard.appendChild(sectionDiv);
         container.appendChild(divContain);
 
         const imgSection = document.createElement('div');
